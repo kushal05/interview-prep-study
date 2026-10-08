@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interview Prep Study Hubs</title>
+<meta name="description" content="Interactive, offline-friendly study courses: DSA, Node.js, Angular, MongoDB, Spring, design patterns and AI.">
+<style>
+:root {
+  --bg: #fbfaf7; --panel: #ffffff; --text: #1f2328; --muted: #646b73; --faint: #8b9198; --border: #e4e1da;
+  --accent: #4f5bd5; --shadow: 0 1px 2px rgba(0,0,0,.04), 0 4px 16px rgba(0,0,0,.05);
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #15171a; --panel: #1d2024; --text: #e6e3dc; --muted: #a2a7ad; --faint: #7b8187; --border: #2d3136; --accent: #8b93f0; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25); }
+}
+:root[data-theme="dark"] { --bg: #15171a; --panel: #1d2024; --text: #e6e3dc; --muted: #a2a7ad; --faint: #7b8187; --border: #2d3136; --accent: #8b93f0; --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 16px rgba(0,0,0,.25); }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 var(--sans); }
+main { max-width: 1040px; margin: 0 auto; padding: 48px 16px 64px; }
+h1 { font-size: 30px; letter-spacing: -.02em; margin: 0 0 6px; }
+.lead { color: var(--muted); margin: 0 0 32px; max-width: 640px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+a.card { display: flex; flex-direction: column; gap: 6px; padding: 18px 20px; background: var(--panel); border: 1px solid var(--border);
+  border-radius: 14px; box-shadow: var(--shadow); color: inherit; text-decoration: none; transition: border-color .15s, transform .15s; }
+a.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.tag { width: 38px; height: 38px; border-radius: 9px; display: grid; place-items: center; color: #fff; font: 700 13px ui-monospace, Consolas, monospace; background: var(--c); }
+.card h2 { font-size: 17px; margin: 6px 0 0; }
+.card p { margin: 0; color: var(--muted); font-size: 14px; flex: 1; }
+.card .go { color: var(--accent); font-size: 13px; font-weight: 600; margin-top: 8px; }
+footer { margin-top: 40px; color: var(--faint); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Interview Prep Study Hubs</h1>
+  <p class="lead">Interactive courses that run entirely in your browser. Each one tracks your reading progress, has flashcards and search, and remembers where you left off on this device.</p>
+  <div class="grid">
+    <a class="card" href="dsa/"><span class="tag" style="--c:#4f5bd5">{ }</span><h2>Data Structures &amp; Algorithms</h2>
+      <p>26 chapters from Big-O to dynamic programming, graphs and string algorithms. JavaScript and Java code, 140 diagrams, a 366-problem practice tracker.</p><span class="go">Open course →</span></a>
+    <a class="card" href="nodejs/"><span class="tag" style="--c:#3c873a">JS</span><h2>Node.js</h2>
+      <p>The event loop, streams, Express, auth, databases, testing, performance and production operations.</p><span class="go">Open course →</span></a>
+    <a class="card" href="angular/"><span class="tag" style="--c:#c3002f">NG</span><h2>Angular</h2>
+      <p>Components, signals, RxJS, forms, routing, state management, testing and performance in modern Angular.</p><span class="go">Open course →</span></a>
+    <a class="card" href="mongodb/"><span class="tag" style="--c:#00684a">DB</span><h2>MongoDB</h2>
+      <p>Data modelling, queries, aggregation, indexes, transactions, replication, sharding and storage internals.</p><span class="go">Open course →</span></a>
+    <a class="card" href="spring/"><span class="tag" style="--c:#6db33f">SB</span><h2>Spring Boot</h2>
+      <p>Java and Spring from the request lifecycle to Spring Data JPA, security and production APIs.</p><span class="go">Open course →</span></a>
+    <a class="card" href="design-patterns/"><span class="tag" style="--c:#a15c07">DP</span><h2>Design Patterns</h2>
+      <p>Creational, structural and behavioural patterns with diagrams and real-world trade-offs.</p><span class="go">Open course →</span></a>
+    <a class="card" href="ai/"><span class="tag" style="--c:#6b4fa0">AI</span><h2>AI Engineering</h2>
+      <p>LLMs, prompting, RAG, agents, evaluation and safety for application developers.</p><span class="go">Open course →</span></a>
+  </div>
+  <footer>Progress is stored in your browser only. Built from the interview-prep notes.</footer>
+</main>
+</body>
+</html>
